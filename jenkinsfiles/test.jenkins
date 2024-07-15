@@ -1,5 +1,5 @@
 #!groovy
-properties ([disableCurrentBuilds()])
+properties  ([disableCurrentBuilds()])
 
 pipeline {
   agent {
@@ -12,12 +12,12 @@ pipeline {
   stages {
     stage("test") {
       steps {
-        sh 'ssh root@192.169.0.11 \'hostname\''
+        sh 'ssh root@192.168.0.11 \'hostname\''
       }
     }
     stage("test2") {
       steps {
-        sh 'ssh root@192.169.0.11 \'uptime\''
+        sh 'ssh root@192.168.0.11 \'uptime\''
       }
     }
   }
