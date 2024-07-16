@@ -1,0 +1,5 @@
+flask
+Flask-SQLAlchemy
+Flask-Login
+flask-wtf
+email-validator == 1.0.5
